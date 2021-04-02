@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
     <header></header>   
@@ -13,9 +15,14 @@
         <section class="reviews">
             <div class="container"> 
               <h2 class="section__title">Отзывы выпускников</h2>
+             
                 <article>
-                  <img src="" alt="Девушка с длинными волосами" loading="lazy" width="90">
-                  <a href=""></a>
+                  <img src="./images/Ellipse 8.png" alt="Девушка с длинными волосами" loading="lazy" width="90">
+                  <a href="">
+                    <svg width="30" height="30">
+                        <use href="./images/icons.svg#icon-antenna"></use>
+                    </svg>
+                  </a>
                   <h3 class="reviewer">Тоня Кучеровская</h3>
                   <p>Выпуск 2015-го года, Національний університет біоресурсів
                   і природокористування України</p>
@@ -24,21 +31,71 @@
                   успішність. Вона стала для мене авторитетом, проте я не тремтіла на уроках, маючи страх зробити найменшу помилку. Зараз
                   я можу похизуватись тим, що я студен ... <span>Читать дальше</span> </p>
                 </article>
-                <ul class="reviewers-list">
-                    <li>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                    </li>
-                    <li>
-                        <img src="" alt="">
-                    </li> 
-                </ul>
-
-            </div>
-            
+              
+                <ul class="reviewers-list"> </ul>
+            </div>         
         </section>
+
+
+<section class="carousel" aria-label="Gallery">
+    <ol class="carousel__viewport">
+        <li id="carousel__slide1" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper">
+                
+                <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
+                <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
+            </div>
+        </li>
+        <li id="carousel__slide2" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
+        </li>
+        <li id="carousel__slide4" tabindex="0" class="carousel__slide">
+            <div class="carousel__snapper"></div>
+            <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
+            <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
+        </li>
+    </ol>
+    <aside class="carousel__navigation">
+        <ol class="carousel__navigation-list">
+            <li class="carousel__navigation-item">
+
+                    <article >
+                                <img src="./images/Ellipse 8.png" alt="Девушка с длинными волосами" loading="lazy" width="90">
+                                <a href=""></a>
+                                <h3 class="reviewer">Тоня Кучеровская</h3>
+                                <p>Выпуск 2015-го года, Національний університет біоресурсів
+                                    і природокористування України</p>
+                                <p>За короткий час занять з Оленою я опанувала граматику і поповнила свій зовсім пустий словниковий запас. З першого
+                                    ж
+                                    заняття я зрозуміла, що знаходжуся у своїй тарілці. Ми з Оленою стали друзями, тому що її справді хвилювала моя
+                                    успішність. Вона стала для мене авторитетом, проте я не тремтіла на уроках, маючи страх зробити найменшу
+                                    помилку. Зараз
+                                    я можу похизуватись тим, що я студен ... <span>Читать дальше</span> </p>
+                    </article>
+                    <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1  </a>
+              
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
+            </li>
+            <li class="carousel__navigation-item">
+                <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
+            </li>
+        </ol>
+    </aside>
+</section>
+
+
     </main> 
     <footer></footer>
 </body>
