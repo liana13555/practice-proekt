@@ -15,29 +15,68 @@
         <section class="reviews">
             <div class="container"> 
               <h2 class="section__title">Отзывы выпускников</h2>
-             
-                <article>
-                  <img src="./images/Ellipse 8.png" alt="Девушка с длинными волосами" loading="lazy" width="90">
-                  <a href="">
-                    <svg width="30" height="30">
-                        <use href="./images/icons.svg#icon-antenna"></use>
+              <button class="reviews-button reviews-button--hide reviews-button__prev" type="button" >
+                <svg class="reviews-button__icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-prev"></use>
+                </svg>
+              </button>
+                <article class="reviews__card">
+                <div class="reviews__thumb">
+                  <img class="reviews__img" src="./images/Ellipse 8.png" alt="Девушка с длинными волосами" loading="lazy" width="90">
+                  <a href="" class="reviews__link">
+                    <svg class="reviews__icon" width="30" height="30">
+                        <use href="./images/icons.svg#icon-vk"></use>
                     </svg>
                   </a>
+                </div> 
+                <div>
                   <h3 class="reviewer">Тоня Кучеровская</h3>
-                  <p>Выпуск 2015-го года, Національний університет біоресурсів
-                  і природокористування України</p>
-                  <p>За короткий час занять з Оленою я опанувала граматику і поповнила свій зовсім пустий словниковий запас. З першого ж
-                  заняття я зрозуміла, що знаходжуся у своїй тарілці. Ми з Оленою стали друзями, тому що її справді хвилювала моя
-                  успішність. Вона стала для мене авторитетом, проте я не тремтіла на уроках, маючи страх зробити найменшу помилку. Зараз
-                  я можу похизуватись тим, що я студен ... <span>Читать дальше</span> </p>
+                  <div>
+                   <p class="reviewer__edu">Выпуск 2015-го года, Національний університет біоресурсів
+                    і природокористування України</p>
+                    <p class="reviewer__text">За короткий час занять з Оленою я опанувала граматику і поповнила свій зовсім пустий словниковий запас. З першого ж
+                    заняття я зрозуміла, що знаходжуся у своїй тарілці. Ми з Оленою стали друзями, тому що її справді хвилювала моя
+                    успішність. Вона стала для мене авторитетом, проте я не тремтіла на уроках, маючи страх зробити найменшу помилку. Зараз
+                    я можу похизуватись тим, що я студен ... 
+                    <span class="reviewer__text--inverse" >Читать дальше</span> </p>
+                  </div>
+                </div>
                 </article>
-              
-                <ul class="reviewers-list"> </ul>
+              <button class="reviews-button reviews-button--hide reviews-button__next" type="button">
+                <svg class="reviews-button__icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-next"></use>
+                </svg>
+              </button>
+
+              <div class="reviewers-group">
+                <button class="reviewers-group__button reviewers-group__button--musk" type="button">
+                <svg class="reviews-button__icon" width="30" height="30">
+                    <use href="./images/icons.svg#icon-prev"></use>
+                </svg>
+                </button>
+                <ul class="reviewers-list"> 
+                    <a href="" class="reviewers-list__link">
+                        <img class="reviewers-list__img" src="./images/Ellipse 8.png" alt="Девушка с длинными волосами" loading="lazy" width="54">
+                    </a>
+                    <a href="" class="reviewers-list__link">
+                        <img class="reviewers-list__img" src="./images/Ellipse 8.png" alt="Девушка с длинными волосами" loading="lazy" width="54">
+                    </a>
+                    <a href="" class="reviewers-list__link">
+                        <img class="reviewers-list__img" src="./images/Ellipse 8.png" alt="Девушка с длинными волосами" loading="lazy" width="54">
+                    </a>
+                </ul>
+                <button class="reviewers-group__button reviewers-group__button--musk" type="button">
+                    <svg class="reviews-button__icon" width="30" height="30">
+                        <use href="./images/icons.svg#icon-next"></use>
+                    </svg>
+                </button>
+              </div>  
+
             </div>         
         </section>
 
 
-<section class="carousel" aria-label="Gallery">
+<!-- <section class="carousel" aria-label="Gallery">
     <ol class="carousel__viewport">
         <li id="carousel__slide1" tabindex="0" class="carousel__slide">
             <div class="carousel__snapper">
@@ -93,7 +132,7 @@
             </li>
         </ol>
     </aside>
-</section>
+</section> -->
 
 
     </main> 
